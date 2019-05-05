@@ -7,9 +7,10 @@
     Title="Products">
     <ContentPage.Content>
         <StackLayout
-            Padding="5"
+            Padding="7"
             BindingContext="{Binding Products}">
             <ListView
+                HasUnevenRows="True"
                 ItemsSource="{Binding Products}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
