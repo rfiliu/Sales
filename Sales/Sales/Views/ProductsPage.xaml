@@ -7,6 +7,7 @@
     Title="Products">
     <ContentPage.Content>
         <StackLayout
+            Padding="5"
             BindingContext="{Binding Products}">
             <ListView
                 ItemsSource="{Binding Products}">

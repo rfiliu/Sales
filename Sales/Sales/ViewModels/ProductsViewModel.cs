@@ -2,7 +2,6 @@
 {
     using Sales.Common.Models;
     using Sales.Services;
-    using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using Xamarin.Forms;

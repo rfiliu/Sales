@@ -3,11 +3,11 @@
 
     public class MainViewModel
     {
-        public ProductsViewModel ProductsVM { get; set; }
+        public ProductsViewModel Products { get; set; }
 
         public MainViewModel()
         {
-            this.ProductsVM = new ProductsViewModel();
+            this.Products = new ProductsViewModel();
         }
     }
 }
