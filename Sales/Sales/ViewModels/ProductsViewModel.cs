@@ -43,8 +43,8 @@
         private async void LoadProducts()
         {
             this.IsRefreshing = true;
-            var response = await this.apiService.GetList<Product>(
-                "http://192.168.0.23/Sales.API", "/api", "/Products");
+            //var url = Application.Current.Resources["UrlAPI"].ToString();
+            var response = await this.apiService.GetList<Product>("http://192.168.0.23/Sales.API", "/api", "/Products");
 
             if (!response.IsSuccess)
             {
