@@ -15,10 +15,10 @@
                 var client = new HttpClient();
                 client.BaseAddress = new System.Uri(urlBase);
                 var url = $"{prefix}{controller}";
-                var response = await client.GetAsync(url);
+                var response = await client.GetAsync(urlBase + url);
                 var answer = await response.Content.ReadAsStringAsync();
 
-                if (!!response.IsSuccessStatusCode)
+                if (!response.IsSuccessStatusCode)
                 {
                     return new Response
                     {
