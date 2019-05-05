@@ -11,6 +11,9 @@
             BindingContext="{Binding Products}">
             <ListView
                 HasUnevenRows="True"
+                IsRefreshing="{Binding IsRefreshing}"
+                IsPullToRefreshEnabled="True"
+                RefreshCommand="{Binding RefreshCommand}"
                 ItemsSource="{Binding Products}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
